@@ -1,0 +1,75 @@
+/* HERO */
+
+section#hero-foundation {
+    display: grid;
+    grid-template-columns: calc(100%/6) calc(100%/6*4) calc(100%/6);
+    grid-template-rows: 5vh 65vh 5vh;
+    height: 75vh;
+    width: 100%;
+}
+
+div#hero {
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-rows: calc(65vh/3) calc(65vh/3*2);
+    grid-area: 2 / 2 / 3 / 3; 
+    height: 65vh;
+    width: 100%;
+}
+
+div#hero > div.cloud > img {
+    height: 60%;
+}
+
+div#hero > div.left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: 1 / 1 / 2 / 2;
+    height: calc(65vh/3);
+    width: 100%;
+}
+
+div#hero > div.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 2 / 2 / 3;
+    height: calc(65vh/3);
+    width: 100%;
+}
+
+div#hero > div.intro > h2 {
+    white-space: nowrap;
+}
+
+div#hero > div.intro > h3 {
+    white-space: nowrap;
+}
+
+div#hero > div.intro > h3 > span {
+    text-decoration: underline;
+}
+
+div#hero > div.right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-area: 1 / 3 / 2 / 4;
+    height: calc(65vh/3);
+    width: 100%;
+}
+
+div#hero > div.flower > img {
+    height: 100%;
+}
+
+div#hero > div.flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2 / 2 / 3 / 3;
+    height: calc(65vh/3*2);
+    width: 100%;
+}
