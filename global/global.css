@@ -1,0 +1,66 @@
+body {
+    background-color: #AADD96;
+    font-family: "Lora", serif;
+    margin: 0;
+    overflow-x: clip;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    color: #3F7652;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(2.25rem, 7vw, 4.5rem);
+    font-weight: normal;
+    margin: 0.75vh;
+    white-space: nowrap;  
+}
+
+h2 {
+    font-family: "Oooh Baby", cursive;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin: 0.75vh;
+    white-space: nowrap; 
+}
+
+h3 {
+    font-size: clamp(0.75rem, 3vw, 1.5rem);
+    font-weight: normal;
+    margin: 0.75vh;
+    white-space: nowrap;
+}
+
+h4 {
+    font-family: "Inter Tight", sans-serif;
+    margin: 0.75vh;
+    white-space: nowrap;
+}
+
+p.gaming-text {
+    font-family: "Inter Tight", sans-serif; 
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: bold;
+    margin: 0.75vh;
+    white-space: nowrap;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20dvh;
+    width: 100dvw;
+}
+
+nav {
+    background-color: #3F7652;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5dvh;
+    width: 100dvw;
+}

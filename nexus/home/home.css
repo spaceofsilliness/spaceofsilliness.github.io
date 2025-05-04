@@ -1,0 +1,50 @@
+section#hero {
+    display: grid;
+    grid-template-columns: 5dvw 30dvw 30dvw 30dvw 5dvw;
+    grid-template-rows: 5dvh calc(65vh/3) calc(65vh/3*2) 5dvh;
+    height: 75dvh;
+    width: 100dvw;
+}
+
+section#hero > div.cloud > img {
+    max-height: calc(65dvh/3*60/100);
+    max-width: calc(30dvw/3*2*60/100);
+}
+
+section#hero > div.left {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+section#hero > div.introduction > h3 > span {
+    text-decoration: underline;
+}
+
+section#hero > div.introduction {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#hero > div.right {
+    grid-area: 2 / 4 / 3 / 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+section#hero > div.flower > img {
+    max-height: calc(65vh/3*2);
+    max-width: 30dvw;;
+}
+
+section#hero > div.flower {
+    grid-area: 3 / 3 / 4 / 4;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+}

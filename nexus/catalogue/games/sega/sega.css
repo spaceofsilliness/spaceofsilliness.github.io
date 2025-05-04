@@ -1,0 +1,58 @@
+section#sega {
+    display: grid;
+    grid-template-columns: 5dvw calc(80dvw/3) 5dvw calc(80dvw/3) 5dvw calc(80dvw/3) 5dvw;
+    grid-template-rows: 5dvh 20dvh 5dvh 40dvh 5dvh;
+    height: 75dvh;
+    width: 100dvw;
+}
+
+section#sega > div.sega-heading {
+    grid-area: 2 / 2 / 3 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#sega > div.segapresskits > img {
+    max-height: calc(40dvh/3*60/100);
+    max-width: calc(80dvw/3*60/100);
+}
+
+section#sega > div.segapresskits > p.gaming-text {
+    color: white;
+    text-shadow: black 0px 3px 5px;
+}
+
+section#sega > div.segapresskits {
+    grid-area: 4 / 2 / 5 / 3;
+    background-image: url(/nexus/catalogue/games/sega/images/segapresskits.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1000px #C7C7C750;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#sega > div.sonicthehedgehog > img {
+    max-height: calc(40dvh/3*60/100);
+    max-width: calc(80dvw/3*60/100);
+}
+
+section#sega > div.sonicthehedgehog {
+    grid-area: 4 / 4 / 5 / 5;
+    background-image: url(/nexus/catalogue/games/sega/images/sonicthehedgehog.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1000px #C7C7C750;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

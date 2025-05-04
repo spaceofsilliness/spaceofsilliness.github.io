@@ -1,0 +1,59 @@
+section#catalogue {
+    display: grid;
+    grid-template-columns: 5dvw calc(80dvw/3) 5dvw calc(80dvw/3) 5dvw calc(80dvw/3) 5dvw;
+    grid-template-rows: 5dvh 20dvh 5dvh 40dvh 5dvh;
+    height: 75dvh;
+    width: 100dvw;
+}
+
+section#catalogue > div.catalogue-heading {
+    grid-area: 2 / 2 / 3 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#catalogue > div.apps > img {
+    max-height: 20dvh;
+    max-width: calc(80dvw/3);
+}
+
+section#catalogue > div.apps {
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#catalogue > div.games > img {
+    max-height: 20dvh;
+    max-width: calc(80dvw/3);
+}
+
+section#catalogue > div.games {
+    grid-area: 4 / 4 / 5 / 5;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#catalogue > div.videos > img {
+    max-height: 20dvh;
+    max-width: calc(80dvw/3);
+}
+
+section#catalogue > div.videos {
+    grid-area: 4 / 6 / 5 / 7;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
