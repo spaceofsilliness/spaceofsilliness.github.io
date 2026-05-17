@@ -106,6 +106,7 @@ section#homepage > div.welcome {
 section#homepage > div.welcome > h2 {
     font-family: "Oooh Baby", cursive;
     font-size: 3rem;
+    text-align: center;
 }
 
 section#homepage > div.welcome > h3 {
