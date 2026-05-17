@@ -194,6 +194,15 @@ section#homepage > div.flower > img {
     header > div > h1 {
         font-size: 2rem;
     }
+
+    section#homepage > div.cloud {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav > div > a {
+        font-size: small;
+    }
 }
 
 @media (max-width: 375px) {

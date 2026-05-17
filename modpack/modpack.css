@@ -109,9 +109,15 @@ section#modpack > div.welcome > h2 {
     letter-spacing: 3px;
 }
 
+section#modpack > div.welcome > p {
+    text-align: center;
+}
+
 section#modpack > div.welcome > h3 {
     font-family: "Oooh Baby", cursive;
+    text-align: center;
 }
+
 
 section#modpack > div.welcome span {
     font-weight: normal;
@@ -147,12 +153,32 @@ section#modpack > div.list1 {
     header > div > h1 {
         font-size: 5rem;
     }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    } 
 }
 
 @media (max-width: 1024px) {
 
     header > div > h1 {
         font-size: 4rem;
+    }
+
+    section#modpack > div.welcome > h2 {
+        font-size: 3rem;
+    }
+
+    section#modpack > div.welcome > p {
+        font-size: 0.85rem;
+    }
+
+    section#modpack > div.welcome > h3 {
+        font-size: 1rem;
     }
 }
 
@@ -161,12 +187,46 @@ section#modpack > div.list1 {
     header > div > h1 {
         font-size: 3rem;
     }
+
+    section#modpack > div.welcome > h2 {
+        font-size: 2rem;
+    }
+
+    section#modpack > div.welcome > p {
+        font-size: 0.55rem;
+    }
+
+    section#modpack > div.welcome > h3 {
+        font-size: 0.65rem;
+    }
+
+    section#modpack > div.list1 {
+        grid-area: 3 / 2 / 4 / 5;
+    }
+
+    section#modpack > div.list1 > table {
+        font-size: 0.85rem;
+    }
+
+    section#modpack > div.list1 > table button {
+        font-size: 0.85rem;
+    }
 }
+
 
 @media (max-width: 425px) {
 
     header > div > h1 {
         font-size: 2rem;
+    }
+
+    section#modpack > div.pixelated-cloud {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav > div > a {
+        font-size: small;
     }
 }
 
