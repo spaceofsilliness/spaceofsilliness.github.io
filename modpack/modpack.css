@@ -111,11 +111,13 @@ section#modpack > div.welcome > h2 {
 
 section#modpack > div.welcome > p {
     text-align: center;
+    white-space: nowrap;
 }
 
 section#modpack > div.welcome > h3 {
     font-family: "Oooh Baby", cursive;
     text-align: center;
+    white-space: nowrap;
 }
 
 
