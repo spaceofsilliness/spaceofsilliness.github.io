@@ -1,11 +1,12 @@
+/* GLOBAL */
 body {
     background-color: #AADD96;
     font-family: "Lora", serif;
     margin: 0;
 }
-
+/* GLOBAL */
 header {
-    background-image: url(./assets/utagawa-hiroshige-sokokura-from-seven-hot-springs-of-hakone-resized.jpg);
+    background-image: url(../assets/utagawa-hiroshige-sokokura-from-seven-hot-springs-of-hakone-resized.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +15,7 @@ header {
     height: 20vh;
     width: 100%;
 }
-
+/* GLOBAL */
 header > div {
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
@@ -23,7 +24,7 @@ header > div {
     height: 15vh;
     width: 100%;
 }
-
+/* GLOBAL */
 header > div > h1 {
     color: #3F7652;
     display: inline-block;
@@ -35,7 +36,7 @@ header > div > h1 {
     text-shadow: 1px 1px 0 white, 1px 1px 10px white;
     white-space: nowrap;
 }
-
+/* GLOBAL */
 nav {
     background-color: #3F7652;
     display: grid;
@@ -43,12 +44,13 @@ nav {
     height: 5vh;
     width: 100%;
 }
-
+/* GLOBAL */
 nav > div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* GLOBAL */
 nav > div > a {
     color: white;
     font-family: "Lora", serif;
@@ -57,31 +59,39 @@ nav > div > a {
     text-shadow: 0 0 1px white;
     overflow: hidden;
 }
-
+/* GLOBAL */
 nav > div#nav-games {
     grid-area: 1 / 2 / 2 / 3;
 }
-
+/* GLOBAL */
 nav > div#nav-homepage {
     grid-area: 1 / 3 / 2 / 4;
 }
-
+/* GLOBAL */
 nav > div#nav-modpack {
     grid-area: 1 / 4 / 2 / 5;
 }
-
+/* GLOBAL */
 nav > div#nav-music {
     grid-area: 1 / 5 / 2 / 6;
 }
-
+/* GLOBAL */
+section > div.welcome > h2 {
+    font-size: 3rem;
+}
+/* GLOBAL */
+section > div.welcome > h3 {
+    font-size: 1.5rem;
+}
+/* SECTION HOMEPAGE */
 section#homepage {
     display: grid;
     grid-template: 2.5vh calc(70vh*1/3) calc(70vh*2/3) 2.5vh / 12.5% 25% 25% 25% 12.5%;
     height: 75vh;
     width: 100%;
 }
-
-section#homepage > div.left {
+/* SECTION HOMEPAGE & MODPACK */
+section > div.left {
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
     justify-content: flex-end;
@@ -89,41 +99,13 @@ section#homepage > div.left {
     height: calc(70vh*1/3);
     width: 100%;
 }
-
-section#homepage > div.left > img {
+/* SECTION HOMEPAGE & MODPACK */
+section > div.left > img {
     object-fit: contain;
     max-width: calc(100%*2/4);
 }
-
-section#homepage > div.welcome {
-    grid-area: 2 / 3 / 3 / 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section#homepage > div.welcome > h2 {
-    font-family: "Oooh Baby", cursive;
-    font-size: 3rem;
-}
-
-section#homepage > div.welcome > h3 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    
-}
-
-section#homepage > div.welcome > h3 > span {
-    text-decoration: underline;
-}
-
-section#homepage > div.welcome > h2,h3 {
-    margin: 0.5rem;
-    text-align: center;
-}
-
-section#homepage > div.right {
+/* SECTION HOMEPAGE & MODPACK */
+section > div.right {
     grid-area: 2 / 4 / 3 / 5;
     display: flex;
     justify-content: flex-start;
@@ -131,12 +113,37 @@ section#homepage > div.right {
     height: calc(70vh*1/3);
     width: 100%;
 }
-
-section#homepage > div.right > img {
+/* SECTION HOMEPAGE & MODPACK */
+section > div.right > img {
     object-fit: contain;
     max-width: calc(100%*2/4);
 }
-
+/* SECTION HOMEPAGE */
+section#homepage > div.welcome {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* SECTION HOMEPAGE */
+section#homepage > div.welcome > h2 {
+    font-family: "Oooh Baby", cursive;
+}
+/* SECTION HOMEPAGE */
+section#homepage > div.welcome > h3 {
+    font-weight: normal;
+}
+/* SECTION HOMEPAGE */
+section#homepage > div.welcome > h3 > span {
+    text-decoration: underline;
+}
+/* SECTION HOMEPAGE */
+section#homepage > div.welcome > h2,h3 {
+    margin: 0.5rem;
+    white-space: nowrap;
+}
+/* SECTION HOMEPAGE */
 section#homepage > div.flower {
     grid-area: 3 / 3 / 4 / 4;
     display: flex;
@@ -145,7 +152,7 @@ section#homepage > div.flower {
     height: calc(70vh*2/3);
     width: 100%;
 }
-
+/* SECTION HOMEPAGE */
 section#homepage > div.flower > img {
     object-fit: contain;
     max-height: 100%;
@@ -153,62 +160,121 @@ section#homepage > div.flower > img {
 }
 
 @media (max-width: 1440px) {
-
+    /* GLOBAL */
     header > div > h1 {
         font-size: 5rem;
     }
-
+    /* GLOBAL */
     h2 {
         font-size: 3rem;
     }
-
+    /* GLOBAL */
     h3 {
         font-size: 1.5rem;
     } 
 }
 
 @media (max-width: 1024px) {
-
+    /* GLOBAL */
     header > div > h1 {
         font-size: 4rem;
     }
-
-    section#homepage > div.welcome > h2 {
-        font-size: 2rem;
+    /* GLOBAL */
+    section > div.welcome > h2 {
+        font-size: 2.75rem;
     }
-
-    section#homepage > div.welcome > h3 {
+    /* GLOBAL */
+    section > div.welcome > p {
         font-size: 1rem;
-    } 
+    }
+    /* GLOBAL */
+    section > div.welcome > h3 {
+        font-size: 1.25rem;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.cloud > img {
+        max-width: calc(100%*3/4);
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.left {
+        justify-content: flex-start;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.right {
+        justify-content: flex-end;
+    }
+    /* SECTION HOMEPAGE */
+    section#homepage > div.flower {
+        grid-area: 3 / 2 / 4 / 5;
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 768px) {
-
+    /* GLOBAL */
     header > div > h1 {
-        font-size: 3rem;
+        font-size: 2.75rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > h2 {
+        font-size: 2.5rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > p {
+        font-size: 0.75rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > h3 {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 425px) {
-
+    /* GLOBAL */
     header > div > h1 {
         font-size: 2rem;
     }
-
-    section#homepage > div.cloud {
-        justify-content: center;
-        align-items: center;
-    }
-
+    /* GLOBAL */
     nav > div > a {
-        font-size: small;
+        font-size: 0.75rem;
+    }
+    /* SECTION HOMEPAGE */
+    section#homepage > div.welcome > h2 {
+        font-size: 2.25rem;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.cloud {
+        align-items: center;
     }
 }
 
 @media (max-width: 375px) {
-
+    /* GLOBAL */
     header > div > h1 {
-        font-size: 1rem;
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    /* GLOBAL */
+    header > div > h1 {
+        font-size: 1.5rem;
+    }
+    /* GLOBAL  */
+    nav > div > a {
+        font-size: 0.5rem;
+    }
+    /* SECTION HOMEPAGE */
+    section#homepage > div.welcome > h2 {
+        font-size: 2rem;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.left {
+    grid-area: 2 / 1 / 3 / 3;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.right {
+    grid-area: 2 / 4 / 3 / 6;
     }
 }
 
