@@ -1,0 +1,146 @@
+section#games {
+    display: grid;
+    grid-template: 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh / 12.5% calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) 12.5%;
+    justify-items: center;
+    align-items: unset;
+}
+
+section#games > div.gbox {
+    background-color: white;
+    border-radius: 25%;
+    aspect-ratio: 1 / 1;
+    max-height: calc(65vh/3);
+    max-width: 100%;
+}
+
+section#games > div.g1 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(https://pbs.twimg.com/profile_images/1476852811887685633/cml4XRdG_400x400.jpg);
+    background-size: 100%;
+}
+
+section#games div.g1:hover {
+    box-shadow: 0 0 10px #fecccb, 0 0 10px white;
+}
+
+section#games > div.g2 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA31964_abe7db3b0d17b984bf7bc1e91b6ae2defad109f76fd606988f214e3cdc389432/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g2:hover {
+    box-shadow: 0 0 10px #087fdd, 0 0 10px white;
+}
+
+section#games > div.g3 {
+    grid-area: 2 / 6 / 3 / 7;
+    background-image: url(https://pbs.twimg.com/profile_images/1601054176959602688/RVrH7YrN_400x400.jpg);
+    background-size: 100%;
+}
+
+section#games div.g3:hover {
+    box-shadow: 0 0 10px #21161e, 0 0 10px white;
+}
+
+section#games > div.g4 {
+    grid-area: 2 / 8 / 3 / 9;
+    background-image: url(https://cdn.prosperopatches.com/titles/PPSA01342_d444846b079d8b81dad513ece3a2b1148f46fc6139622a7900e3984cbd7918c0/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g4:hover {
+    box-shadow: 0 0 10px #595c5f, 0 0 10px white;
+}
+
+section#games > div.g5 {
+    grid-area: 4 / 2 / 5 / 3;
+    background-image: url(https://pbs.twimg.com/profile_images/1562130650462703618/cIzy6200_400x400.jpg);
+    background-size: 100%;
+}
+
+section#games div.g5:hover {
+    box-shadow: 0 0 10px black, 0 0 10px white;
+}
+
+section#games > div.g6 {
+    grid-area: 4 / 4 / 5 / 5;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA03694_4ea75bf7f55d414f9e7c14068671cb70c0c0c881509cc51978d8134c25926ab9/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g6:hover {
+    box-shadow: 0 0 10px #5f75d2, 0 0 10px white;
+}
+
+section#games > div.g7 {
+    grid-area: 4 / 6 / 5 / 7;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA02522_3e03cbdb6a7b93f44a4624247d3b5dc8fd41f2677eb090b25490f18d7fce846f/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g7:hover {
+    box-shadow: 0 0 10px #615941, 0 0 10px white;
+}
+
+section#games > div.g8 {
+    grid-area: 4 / 8 / 5 / 9;
+    background-image: url(https://pbs.twimg.com/profile_images/1696839280281219072/MttC7F1D_400x400.jpg);
+    background-size: 100%;
+}
+
+section#games div.g8:hover {
+    box-shadow: 0 0 10px #0e0635, 0 0 10px white;
+}
+
+section#games > div.g9 {
+    grid-area: 6 / 2 / 7 / 3;
+    background-image: url(https://pbs.twimg.com/profile_images/1792722014714654721/bXr-mxDx_400x400.png);
+    background-size: 100%;
+}
+
+section#games div.g9:hover {
+    box-shadow: 0 0 10px #000001, 0 0 10px white;
+}
+
+section#games > div.g10 {
+    grid-area: 6 / 4 / 7 /5;
+    background-image: url(https://pbs.twimg.com/profile_images/1642709121182105600/Nsa4_hLo_400x400.png);
+    background-size: 100%;
+}
+
+section#games div.g10:hover {
+    box-shadow: 0 0 10px #90e463, 0 0 10px white;
+}
+
+section#games > div.g11 {
+    grid-area: 6 / 6 / 7 / 7;
+    background-image: url(https://shared.fastly.steamstatic.com/community_assets/images/apps/1730680/6a0a7d10b25186f204444b721aa9c9b6d691f631.ico);
+    background-size: 100%;
+}
+
+section#games div.g11:hover {
+    box-shadow: 0 0 10px #62b6d6, 0 0 10px white;
+}
+
+section#games > div.g12 {
+    grid-area: 6 / 8 / 7 / 9;
+    background-image: url(https://shared.fastly.steamstatic.com/community_assets/images/apps/1599660/8b27e64a9f798edca0e9010d9ba7fd83359efe34.ico);
+    background-size: 100%;
+}
+
+section#games div.g12:hover {
+    box-shadow: 0 0 10px #a77d75, 0 0 10px white;
+}
+
+div.gbox:hover {
+    box-shadow: 0 0 10px white;
+    padding: 0.50px;
+}
+
+@media (max-width: 1132px) {
+    section#games {
+        justify-items: unset;
+        align-items: center;
+    }
+}
