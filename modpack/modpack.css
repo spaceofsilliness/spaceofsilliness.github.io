@@ -159,6 +159,11 @@ section#modpack > div.list1 {
     align-items: flex-start;
 }
 
+/* SECTION MODPACK */
+section#modpack > div.list1 > table th {
+    text-align: left;
+}
+
 @media (max-width: 1440px) {
     /* GLOBAL */
     header > div > h1 {
