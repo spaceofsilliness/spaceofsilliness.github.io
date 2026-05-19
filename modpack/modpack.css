@@ -1,0 +1,296 @@
+/* GLOBAL */
+body {
+    background-color: #AADD96;
+    font-family: "Lora", serif;
+    margin: 0;
+}
+/* GLOBAL */
+header {
+    background-image: url(../assets/utagawa-hiroshige-sokokura-from-seven-hot-springs-of-hakone-resized.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template: 2.5vh 15vh 2.5vh / 12.5% 75% 12.5%;
+    height: 20vh;
+    width: 100%;
+}
+/* GLOBAL */
+header > div {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+}
+/* GLOBAL */
+header > div > h1 {
+    color: #3F7652;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: 1px 1px 0 white, 1px 1px 10px white;
+    white-space: nowrap;
+}
+/* GLOBAL */
+nav {
+    background-color: #3F7652;
+    display: grid;
+    grid-template: 5vh / 12.5% calc(75%/4) calc(75%/4) calc(75%/4) calc(75%/4) 12.5%;
+    height: 5vh;
+    width: 100%;
+}
+/* GLOBAL */
+nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* GLOBAL */
+nav > div > a {
+    color: white;
+    font-family: "Lora", serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 1px white;
+    overflow: hidden;
+}
+/* GLOBAL */
+nav > div#nav-games {
+    grid-area: 1 / 2 / 2 / 3;
+}
+/* GLOBAL */
+nav > div#nav-homepage {
+    grid-area: 1 / 3 / 2 / 4;
+}
+/* GLOBAL */
+nav > div#nav-modpack {
+    grid-area: 1 / 4 / 2 / 5;
+}
+/* GLOBAL */
+nav > div#nav-music {
+    grid-area: 1 / 5 / 2 / 6;
+}
+/* GLOBAL */
+section > div.welcome > h2 {
+    font-size: 3rem;
+}
+/* GLOBAL */
+section > div.welcome > h3 {
+    font-size: 1.5rem;
+}
+/* SECTION MODPACK */
+section#modpack {
+    display: grid;
+    grid-template: 2.5vh calc(70vh*1/3) auto / 12.5% 25% 25% 25% 12.5%;
+    height: auto;
+    width: 100%;
+}
+/* SECTION HOMEPAGE & MODPACK */
+section > div.left {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: calc(70vh*1/3);
+    width: 100%;
+}
+/* SECTION HOMEPAGE & MODPACK */
+section > div.left > img {
+    object-fit: contain;
+    max-width: calc(100%*2/4);
+}
+/* SECTION HOMEPAGE & MODPACK */
+section > div.right {
+    grid-area: 2 / 4 / 3 / 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: calc(70vh*1/3);
+    width: 100%;
+}
+
+/* SECTION HOMEPAGE & MODPACK */
+section > div.right > img {
+    object-fit: contain;
+    max-width: calc(100%*2/4);
+}
+/* SECTION MODPACK */
+section#modpack > div.welcome {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* SECTION MODPACK */
+section#modpack > div.welcome > h2 {
+    font-family: "Jersey 10", sans-serif;
+    letter-spacing: 3px;
+}
+/* SECTION MODPACK */
+section#modpack > div.welcome > p {
+    text-align: center;
+    white-space: nowrap;
+}
+/* SECTION MODPACK */
+section#modpack > div.welcome > h3 {
+    font-family: "Oooh Baby", cursive;
+    text-align: center;
+    white-space: nowrap;
+}
+/* SECTION MODPACK */
+section#modpack > div.welcome span {
+    font-weight: normal;
+}
+/* SECTION MODPACK */
+section#modpack > div.welcome > h2,h3,p {
+    margin: 0.25rem;
+}
+/* SECTION MODPACK */
+section#modpack > div.list1 {
+    grid-area: 3 / 3 / 4 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width: 1440px) {
+    /* GLOBAL */
+    header > div > h1 {
+        font-size: 5rem;
+    }
+    /* GLOBAL */
+    h2 {
+        font-size: 3rem;
+    }
+    /* GLOBAL */
+    h3 {
+        font-size: 1.5rem;
+    } 
+}
+
+@media (max-width: 1024px) {
+    /* GLOBAL */
+    header > div > h1 {
+        font-size: 4rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > h2 {
+        font-size: 2.75rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > p {
+        font-size: 1rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > h3 {
+        font-size: 1.25rem;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.cloud > img {
+        max-width: calc(100%*3/4);
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.left {
+        justify-content: flex-start;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.right {
+        justify-content: flex-end;
+    }
+    /* SECTION MODPACK */
+    section#modpack > div.list1 {
+        grid-area: 3 / 2 / 4 / 5;
+    }
+    /* SECTION MODPACK */
+    section#modpack > div.list1 > table {
+        font-size: 0.75rem;
+    }
+    /* SECTION MODPACK */
+    section#modpack > div.list1 > table button {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* GLOBAL */
+    header > div > h1 {
+        font-size: 2.75rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > h2 {
+        font-size: 2.5rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > p {
+        font-size: 0.75rem;
+    }
+    /* GLOBAL */
+    section > div.welcome > h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    /* GLOBAL */
+    header > div > h1 {
+        font-size: 2rem;
+    }
+    /* GLOBAL */
+    nav > div > a {
+        font-size: 0.75rem;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.cloud {
+        align-items: center;
+    }
+
+    section#modpack > div.list1 > table {
+        font-size: 0.625rem;
+    }
+
+    section#modpack > div.list1 > table button {
+        font-size: 0.625rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    /* GLOBAL */
+    header > div > h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    /* GLOBAL */
+    header > div > h1 {
+        font-size: 1.5rem;
+    }
+    /* GLOBAL  */
+    nav > div > a {
+        font-size: 0.5rem;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.left {
+    grid-area: 2 / 1 / 3 / 3;
+    }
+    /* SECTION HOMEPAGE & MODPACK */
+    section > div.right {
+    grid-area: 2 / 4 / 3 / 6;
+    }
+
+    section#modpack > div.list1 > table {
+        font-size: 0.5rem;
+    }
+
+    section#modpack > div.list1 > table button {
+        font-size: 0.5rem;
+    }
+}
