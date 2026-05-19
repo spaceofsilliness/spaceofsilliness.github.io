@@ -1,6 +1,6 @@
 section#games {
     display: grid;
-    grid-template: 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh / 12.5% calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) 12.5%;
+    grid-template: 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh calc(65vh/3) 2.5vh / 12.5% calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) calc((75% - 4 * 50% / 3) / 3) calc(50%/3) 12.5%;
     justify-items: center;
     align-items: unset;
 }
@@ -20,7 +20,7 @@ section#games > div.g1 {
 }
 
 section#games div.g1:hover {
-    box-shadow: 0 0 10px #fecccb, 0 0 10px white;
+    box-shadow: 0 0 10px lightpink, 0 0 10px white;
 }
 
 section#games > div.g2 {
@@ -30,7 +30,7 @@ section#games > div.g2 {
 }
 
 section#games div.g2:hover {
-    box-shadow: 0 0 10px #087fdd, 0 0 10px white;
+    box-shadow: 0 0 10px dodgerblue, 0 0 10px white;
 }
 
 section#games > div.g3 {
@@ -40,7 +40,7 @@ section#games > div.g3 {
 }
 
 section#games div.g3:hover {
-    box-shadow: 0 0 10px #21161e, 0 0 10px white;
+    box-shadow: 0 0 10px darkslategray, 0 0 10px white;
 }
 
 section#games > div.g4 {
@@ -50,7 +50,7 @@ section#games > div.g4 {
 }
 
 section#games div.g4:hover {
-    box-shadow: 0 0 10px #595c5f, 0 0 10px white;
+    box-shadow: 0 0 10px dimgray, 0 0 10px white;
 }
 
 section#games > div.g5 {
@@ -60,81 +60,200 @@ section#games > div.g5 {
 }
 
 section#games div.g5:hover {
-    box-shadow: 0 0 10px black, 0 0 10px white;
+    box-shadow: 0 0 10px darkred, 0 0 10px white;
 }
 
 section#games > div.g6 {
     grid-area: 4 / 4 / 5 / 5;
-    background-image: url(https://cdn.orbispatches.com/titles/CUSA03694_4ea75bf7f55d414f9e7c14068671cb70c0c0c881509cc51978d8134c25926ab9/icon0.webp);
+    background-image: url(https://www.jp.square-enix.com/game/detail/dod/img/dod.jpg);
     background-size: 100%;
 }
 
 section#games div.g6:hover {
-    box-shadow: 0 0 10px #5f75d2, 0 0 10px white;
+    box-shadow: 0 0 10px orangered, 0 0 10px white;
 }
 
 section#games > div.g7 {
     grid-area: 4 / 6 / 5 / 7;
-    background-image: url(https://cdn.orbispatches.com/titles/CUSA02522_3e03cbdb6a7b93f44a4624247d3b5dc8fd41f2677eb090b25490f18d7fce846f/icon0.webp);
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA03694_4ea75bf7f55d414f9e7c14068671cb70c0c0c881509cc51978d8134c25926ab9/icon0.webp);
     background-size: 100%;
 }
 
 section#games div.g7:hover {
-    box-shadow: 0 0 10px #615941, 0 0 10px white;
+    box-shadow: 0 0 10px mediumturquoise, 0 0 10px white;
 }
 
 section#games > div.g8 {
     grid-area: 4 / 8 / 5 / 9;
-    background-image: url(https://pbs.twimg.com/profile_images/1696839280281219072/MttC7F1D_400x400.jpg);
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA02522_3e03cbdb6a7b93f44a4624247d3b5dc8fd41f2677eb090b25490f18d7fce846f/icon0.webp);
     background-size: 100%;
 }
 
 section#games div.g8:hover {
-    box-shadow: 0 0 10px #0e0635, 0 0 10px white;
+    box-shadow: 0 0 10px darkolivegreen, 0 0 10px white;
 }
 
 section#games > div.g9 {
     grid-area: 6 / 2 / 7 / 3;
-    background-image: url(https://pbs.twimg.com/profile_images/1792722014714654721/bXr-mxDx_400x400.png);
+    background-image: url(https://pbs.twimg.com/profile_images/1696839280281219072/MttC7F1D_400x400.jpg);
     background-size: 100%;
 }
 
 section#games div.g9:hover {
-    box-shadow: 0 0 10px #000001, 0 0 10px white;
+    box-shadow: 0 0 10px darkslateblue, 0 0 10px white;
 }
 
 section#games > div.g10 {
     grid-area: 6 / 4 / 7 /5;
-    background-image: url(https://pbs.twimg.com/profile_images/1642709121182105600/Nsa4_hLo_400x400.png);
+    background-image: url(https://pbs.twimg.com/profile_images/1792722014714654721/bXr-mxDx_400x400.png);
     background-size: 100%;
 }
 
 section#games div.g10:hover {
-    box-shadow: 0 0 10px #90e463, 0 0 10px white;
+    box-shadow: 0 0 10px cornflowerblue, 0 0 10px white;
 }
 
 section#games > div.g11 {
     grid-area: 6 / 6 / 7 / 7;
-    background-image: url(https://shared.fastly.steamstatic.com/community_assets/images/apps/1730680/6a0a7d10b25186f204444b721aa9c9b6d691f631.ico);
+    background-image: url(https://pbs.twimg.com/profile_images/1642709121182105600/Nsa4_hLo_400x400.png);
     background-size: 100%;
 }
 
 section#games div.g11:hover {
-    box-shadow: 0 0 10px #62b6d6, 0 0 10px white;
+    box-shadow: 0 0 10px LawnGreen, 0 0 10px white;
 }
 
 section#games > div.g12 {
     grid-area: 6 / 8 / 7 / 9;
-    background-image: url(https://shared.fastly.steamstatic.com/community_assets/images/apps/1599660/8b27e64a9f798edca0e9010d9ba7fd83359efe34.ico);
+    background-image: url(https://shared.fastly.steamstatic.com/community_assets/images/apps/1730680/6a0a7d10b25186f204444b721aa9c9b6d691f631.ico);
     background-size: 100%;
 }
 
 section#games div.g12:hover {
-    box-shadow: 0 0 10px #a77d75, 0 0 10px white;
+    box-shadow: 0 0 10px PaleGoldenRod, 0 0 10px white;
+}
+
+section#games > div.g13 {
+    grid-area: 8 / 2 / 9 / 3;
+    background-image: url(https://shared.fastly.steamstatic.com/community_assets/images/apps/1599660/8b27e64a9f798edca0e9010d9ba7fd83359efe34.ico);
+    background-size: 100%;
+}
+
+section#games div.g13:hover {
+    box-shadow: 0 0 10px Aquamarine, 0 0 10px white;
+}
+
+section#games > div.g14 {
+    grid-area: 8 / 4 / 9 / 5;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA06090_d8d660fb711cd4bc214bb3ac685c279efaa6e77605353d5d46f1b3fdf4d63747/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g14:hover {
+    box-shadow: 0 0 10px orange, 0 0 10px white;
+}
+
+section#games > div.g15 {
+    grid-area: 8 / 6 / 9 / 7;
+    background-image: url(https://avatars.fastly.steamstatic.com/791af8dc75da678e7a16c93c129d971175142621_full.jpg);
+    background-size: 100%;
+}
+
+section#games div.g15:hover {
+    box-shadow: 0 0 10px mediumblue, 0 0 10px white;
+}
+
+section#games > div.g16 {
+    grid-area: 8 / 8 / 9 / 9;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA05289_61f1d6194b239e9dc7f79aa2597e5d96a07454e35872eb8d881074133317d961/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g16:hover {
+    box-shadow: 0 0 10px gold, 0 0 10px white;
+}
+
+section#games > div.g17 {
+    grid-area: 10 / 2 / 11 / 3;
+    background-image: url(https://asia.sega.com/p30th/en/wp-content/themes/atlus_en/resources/dist/img/top/modal/persona.png);
+    background-size: 100%;
+}
+
+section#games div.g17:hover {
+    box-shadow: 0 0 10px mediumslateblue, 0 0 10px white;
+}
+
+section#games > div.g18 {
+    grid-area: 10 / 4 / 11 / 5;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA01047_5c588933bebc5584f05bea6cfd5c5093c5bbcaa4e03b61c7b816ce89106e5888/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g18:hover {
+    box-shadow: 0 0 10px navy, 0 0 10px white;
+}
+
+section#games > div.g19 {
+    grid-area: 10 / 6 / 11 / 7;
+    background-image: url(https://pbs.twimg.com/profile_images/2049954126231146496/jKJVfky2_400x400.jpg);
+    background-size: 100%;
+}
+
+section#games div.g19:hover {
+    box-shadow: 0 0 10px black, 0 0 10px white;
+}
+
+section#games > div.g20 {
+    grid-area: 10 / 8 / 11 / 9;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA08809_16cf5fb26bb25d59b5158bb13398c40d3647f0abb8815a139b6e280e2549eaf6/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g20:hover {
+    box-shadow: 0 0 10px olive, 0 0 10px white;
+}
+
+section#games > div.g21 {
+    grid-area: 12 / 2 / 13 / 3;
+    background-image: url(https://pbs.twimg.com/profile_images/1581754377835991041/uPzeVa9g_400x400.jpg);
+    background-size: 100%;
+}
+
+section#games div.g21:hover {
+    box-shadow: 0 0 10px black, 0 0 10px white;
+}
+
+section#games > div.g22 {
+    grid-area: 12 / 4 / 13 / 5;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA02198_0834a1a60e75a6c494f0b93f78697b11312513db07b70291714fe5f2bf46bff6/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g22:hover {
+    box-shadow: 0 0 10px RoyalBlue, 0 0 10px white;
+}
+
+section#games > div.g23 {
+    grid-area: 12 / 6 / 13 / 7;
+    background-image: url(https://cdn.orbispatches.com/titles/CUSA47431_15045b81a92d63ffc6fa875d6d76704e487421efa55313ff47c1dcdfd37ac0c3/icon0.webp);
+    background-size: 100%;
+}
+
+section#games div.g23:hover {
+    box-shadow: 0 0 10px MidnightBlue, 0 0 10px white;
+}
+
+section#games > div.g24 {
+    grid-area: 12 / 8 / 13 / 9;
+    background-image: url(https://pbs.twimg.com/profile_images/1607671672471158784/4AEDNGBs_400x400.jpg);
+    background-size: 100%;
+}
+
+section#games div.g24:hover {
+    box-shadow: 0 0 10px goldenrod, 0 0 10px white;
 }
 
 div.gbox:hover {
-    box-shadow: 0 0 10px white;
     padding: 0.50px;
 }
 
