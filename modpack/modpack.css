@@ -303,7 +303,7 @@ section#modpack > div.tip3:hover {
         font-size: 0.75rem;
     }
 
-    section#modpack > div.tip3 p {
+    section#modpack > div.tip3 > p {
         font-size: 0.75rem;
     }
     
@@ -343,7 +343,7 @@ section#modpack > div.tip3:hover {
         font-size: 0.5rem;
     }
 
-    section#modpack > div.tip3 p {
+    section#modpack > div.tip3 > p {
         font-size: 0.5rem;
     }
     
