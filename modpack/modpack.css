@@ -198,28 +198,7 @@ section#modpack > div.tips {
     flex-direction: column;
     gap: 2.5vh;
     width: calc(100% - 100% / 3);
-    margin: 2.5vh 0 0 0;
-}
-
-section#modpack > div.tips > div.tip1 {
-    background-color: #3F7652;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: calc(70vh*1/5);
-    width: calc(100% - 100% / 3);
-    border-radius: 0.5rem;
-}
-
-section#modpack > div.tips > div.tip1 > div.wrap1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section#modpack > div.tips > div.tip1:hover,div.tip2:hover,div.step:hover {
-    box-shadow: 0 0 10px #3F7652, 0 0 10px white;
+    margin: calc(2.5vh + 70vh * 1 / 5) 0 0 0;
 }
 
 section#modpack > div.tips > div.tip2 {
@@ -230,6 +209,7 @@ section#modpack > div.tips > div.tip2 {
     flex-direction: column;
     width: calc(100% - 100% / 3);
     border-radius: 0.5rem;
+    margin: 2.5vh 0 0 0;
 }
 
 section#modpack > div.tips > div.s1 {
@@ -297,22 +277,62 @@ section#modpack > div.tip3:hover {
     box-shadow: 0 0 10px goldenrod, 0 0 10px white;
 }
 
+section#modpack > div.tip1 {
+    grid-area: 3 / 4 / 4 / 5;
+    justify-self: center;
+    background-color: #3F7652;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(70vh*1/5);
+    width: calc(100% - 100% / 3);
+    border-radius: 0.5rem;
+    margin: 2.5vh 0 0 0;
+}
+
+section#modpack > div.tip1 p {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 1px white;
+}
+
+section#modpack > div.tip1 > div.wrap1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 100% / 3);
+}
+
+section#modpack > div.tip1 > div.wrap1 > img {
+    height: 100%;
+    width: 100%;
+}
+
+section#modpack > div.tip1:hover,div.tip2:hover,div.step:hover {
+    box-shadow: 0 0 10px #3F7652, 0 0 10px white;
+}
+
 @media (max-width: 1900px) {
     
     section#modpack > div.tips p {
         font-size: 0.75rem;
     }
 
-    section#modpack > div.tip3 > p {
+    section#modpack > div.tip3 p {
         font-size: 0.75rem;
     }
     
-    section#modpack > div.tips > div.tip1 {
+    section#modpack > div.tip3 {
         height: calc(70vh*1/6);
         width: calc(100% - 100% / 3);
     }
 
-    section#modpack > div.tip3 {
+    section#modpack > div.tip1 p {
+        font-size: 0.75rem;
+    }
+    
+    section#modpack > div.tip1 {
         height: calc(70vh*1/6);
         width: calc(100% - 100% / 3);
     }
@@ -335,6 +355,10 @@ section#modpack > div.tip3:hover {
         height: 15vh;
         width: 100%;
     }
+
+    section#modpack > div.tips {
+        margin: calc(2.5vh + 70vh * 1 / 6) 0 0 0;
+    }
 }
 
 @media (max-width: 1750px) {
@@ -346,13 +370,17 @@ section#modpack > div.tip3:hover {
     section#modpack > div.tip3 > p {
         font-size: 0.5rem;
     }
-    
-    section#modpack > div.tips > div.tip1 {
+
+    section#modpack > div.tip3 {
         height: calc(70vh*1/7);
         width: calc(100% - 100% / 3);
     }
 
-    section#modpack > div.tip3 {
+    section#modpack > div.tip1 > p {
+        font-size: 0.5rem;
+    }
+
+    section#modpack > div.tip1 {
         height: calc(70vh*1/7);
         width: calc(100% - 100% / 3);
     }
@@ -375,17 +403,21 @@ section#modpack > div.tip3:hover {
         height: 12vh;
         width: 100%;
     }
+
+    section#modpack > div.tips {
+        margin: calc(2.5vh + 70vh * 1 / 7) 0 0 0;
+    }
 }
 
 @media (max-width: 1650px) {
     
-    section#modpack > div.tips {
+    /* section#modpack > div.tips {
         visibility: hidden;
     }
 
     section#modpack > div.tip3 {
         visibility: hidden;
-    }
+    } */
 }
 
 @media (max-width: 1440px) {
@@ -444,6 +476,36 @@ section#modpack > div.tip3:hover {
     section#modpack > div.list1 > table button {
         font-size: 0.75rem;
     }
+
+    section#modpack > div.tips {
+        grid-area: 4 / 2 / 5 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2.5vh;
+        width: calc(100%);
+        margin: 0;
+    }
+
+    section#modpack > div.tip3 {
+        justify-self: flex-start;
+        width: calc(100% - 100% / 2.75);
+    }
+
+    section#modpack > div.tip1 {
+        justify-self: flex-end;
+        width: calc(100% - 100% / 2.75);
+    }
+
+    section#modpack > div.tip1 > p {
+        text-align: center;
+    }
+
+    section#modpack > div.tip1 > div.wrap1 {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -464,6 +526,17 @@ section#modpack > div.tip3:hover {
     section > div.welcome > h3 {
         font-size: 1rem;
     }
+
+    section#modpack > div.tip3 {
+        grid-area: 3 / 1 / 4 / 3;
+        width: calc(100% - 100% / 2.5);
+    }
+
+    section#modpack > div.tip1 {
+        grid-area: 3 / 4 / 4 / 6;
+        width: calc(100% - 100% / 2.5);
+    }
+    
 }
 
 @media (max-width: 425px) {
