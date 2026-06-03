@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space of Silliness</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./modpack.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Lora:ital,wght@0,400..700;1,400..700&family=Oooh+Baby&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Space of Silliness</h1>
+        </div>
+    </header>
+    <nav>
+        <div id="nav-games"><a href="../games/games.html">Games</a></div>
+        <div id="nav-homepage"><a href="../index.html">Homepage</a></div>
+        <div id="nav-modpack"><a href="./modpack.html">Modpack</a></div>
+        <div id="nav-music"><a href="#">Music</a></div>
+        <div id="nav-works"><a href="../works/works.html">Works</a></div>
+    </nav>
+    <section id="modpack">
+        <div class="cloud left">
+            <img src="./assets/pixelated-cloud-resized.png" alt="pixelated cloud on the left">
+        </div>
+        <div class="welcome">
+            <h2>Modpack</h2>
+            <p>Requirements:</p>
+            <p style="color: green; font-weight: bold;">Minecraft 1.21.1</p>
+            <p style="color: orangered; font-weight: bold;">NeoForge 21.1.230</p>
+            <p>IP Address: <b><u>pl1.epichost.pl:10479</u></b></p>
+            <h3>List of mods: <span>(alphabetically)</span></h3>
+        </div>
+        <div class="cloud right">
+            <img src="./assets/pixelated-cloud-resized.png" alt="pixelated cloud on the right">
+        </div>
+        <div class="list1">
+            <table>
+                <tr>
+                    <th>Download all simultaneously:</th>
+                    <th><button type="button" onclick="downloadAll()">Click</button></th>
+                </tr>
+                <tr>
+                    <td>1. Another Furniture</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/ulloLmqG/versions/Q29JlZfU/another_furniture-neoforge-4.0.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>2. Architectury API</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/lhGA9TYQ/versions/ZxYGwlk0/architectury-13.0.8-neoforge.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>3. bad packets</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/ftdbN0KK/versions/RNyYl9M3/badpackets-neo-0.8.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>4. Beans Backpacks</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/o4TtgIhD/versions/LoZIPwve/beansbackpacks-1.21-n-0.12-beta.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>5. Concurrent Chunk Management Engine</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/COlSi5iR/versions/bxMrYsyE/c2me-neoforge-mc1.21.1-0.3.0%2Balpha.0.92.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>6. Collective</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/e0M1UDsY/versions/6xEh8Qbr/collective-1.21.1-8.22.jar?mr_download_reason=dependency&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>7. Create</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/create-1.21.1-6.0.10.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>8. CreativeCore</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/OsZiaDHq/versions/ObUu8hxJ/CreativeCore_NEOFORGE_v2.13.38_mc1.21.1.jar?mr_download_reason=dependency';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>9. Ecologics</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/NCKpPR0Z/versions/ml3dpcRE/ecologics-1.21.1-2.3.6.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>10. Etched</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/zi3Fnfmc/versions/4CyXy8q0/etched-5.0.1.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>11. Every Compat (Wood Good)</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/eiktJyw1/versions/YqUPN8JN/everycomp-1.21-2.11.40-neoforge.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>12. Exposure</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/hB899VmG/versions/OJ3DFzQc/exposure-neoforge-1.21.1-1.9.16.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>13. Farmer's Delight</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/R2OftAxM/versions/GbNuOZ4S/FarmersDelight-1.21.1-1.3.2.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>14. FerriteCore</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>15. FTB Chunks</td>
+                    <td><button type="button" onclick="window.location='https://www.curseforge.com/api/v1/mods/314906/files/7608681/download';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>16. FTB Library</td>
+                    <td><button type="button" onclick="window.location='https://www.curseforge.com/api/v1/mods/404465/files/7746959/download';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>17. FTB Teams</td>
+                    <td><button type="button" onclick="window.location='https://www.curseforge.com/api/v1/mods/404468/files/7878281/download';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>18. GeckoLib</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/8BmcQJ2H/versions/gFmrC8Ru/geckolib-neoforge-1.21.1-4.8.4.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>19. Geophilic</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/hl5OLM95/versions/3pbmqlYX/Geophilic%20v3.5.mod.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>20. Just Enough Items (JEI)</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/u6dRKJwZ/versions/YAcQ6elZ/jei-1.21.1-neoforge-19.27.0.340.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>21. Just Player Heads</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/YdVBZMNR/versions/Bhim3m1a/justplayerheads-1.21.1-4.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>22. Lithium</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/gvQqBUqZ/versions/RXHf27Wv/lithium-neoforge-0.15.3%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>23. Lithostitched</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/XaDC71GB/versions/Nf30FMLg/lithostitched-1.7.7-neoforge-21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>24. Mannequins</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/wfGzjtBG/versions/BTD20asX/mannequins-3.0.0-rc.1.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>25. ModernFix</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/nmDcB62a/versions/VGmSpV69/modernfix-neoforge-5.27.8%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>26. Moonlight Lib</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/twkfQtEc/versions/sqbhVahR/moonlight-neoforge-1.21.1-3.0.9.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>27. Mowzie's Mobs</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/BFbX9xcm/versions/xgAXTl17/mowziesmobs-1.21.1-1.8.2.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>28. Naturalist</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/F8BQNPWX/versions/t5ONaov5/naturalist-1.0.2-neoforge-1.21.1.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>29. Nirvana</td>
+                    <td><button type="button" onclick="window.location='https://www.curseforge.com/api/v1/mods/1278909/files/7766044/download';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>30. Not Enough Recipe Book [NERB]</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/bQh7xzFq/versions/8SBaRv1t/Not%20Enough%20Recipe%20Book-NEOFORGE-0.4.3%2B1.21.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>31. Nyf's Spiders</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/dOGM7ccu/versions/pjXVTyLu/nyfsspiders-neoforge-1.21.1-3.0.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>32. ShatterLib | OctoLib</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/RH2KUdKJ/versions/yVCCi6TK/OctoLib-NEOFORGE-0.6.2%2B1.21.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>33. PlayerRevive</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/ABIMzABM/versions/LS7UoW1b/PlayerRevive_NEOFORGE_v2.1.2_mc1.21.1.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>34. Ribbits</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/8YcE8y4T/versions/XrUKaWrw/Ribbits-1.21.1-NeoForge-4.1.6.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>35. ScalableLux</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/Ps1zyz6x/versions/j10HNoNf/ScalableLux-0.1.0.1%2Bneoforge.1cb1e91-all.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>36. Skin Restorer</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/ghrZDhGW/versions/dHM5BlZ5/skinrestorer-2.7.0%2B1.21-neoforge.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>37. Sodium</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/AANobbMI/versions/hSgrV2wa/sodium-neoforge-0.8.12-alpha.2%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>38. Structory</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/aKCwCJlY/versions/Nvh2sSPX/Structory_26.1_v1.3.16.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>39. Structory: Towers</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/j3FONRYr/versions/ioKwCTuD/Structory_Towers_26.1_v1.0.16.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>40. Tectonic</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/lWDHr9jE/versions/iCGkqnnx/tectonic-3.0.22-neoforge-21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>41. TerraBlender</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/kkmrDlKT/versions/6e8GCrLb/TerraBlender-neoforge-1.21.1-4.1.0.8.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>42. vista</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/zuARv1N7/versions/XUyNAmF2/vista-neoforge-1.21.1-4.3.1.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>43. WTHIT</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/6AQIaxuO/versions/IeXnWQRE/wthit-1.21.1-neo-12.10.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>44. YUNG's API</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/Ua7DFN59/versions/ZB22DE9q/YungsApi-1.21.1-NeoForge-5.1.6.jar?mr_download_reason=standalone';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>45. YUNG's Better Caves</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/Dfu00ggU/versions/ygKiHadA/YungsBetterCaves-1.21.1-NeoForge-3.1.4.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>46. YUNG's Better Desert Temples</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/XNlO7sBv/versions/GQ9iNWkI/YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>47. YUNG's Better Dungeons</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/o1C1Dkj5/versions/D6aZn0Em/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>48. YUNG's Better End Island</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/2BwBOmBQ/versions/I52NZ1qK/YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>49. YUNG's Better Jungle Temples</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/z9Ve58Ih/versions/P00i2hJn/YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>50. YUNG's Better Mineshafts</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/HjmxVlSr/versions/Go3nbneL/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>      
+                <tr>
+                    <td>51. YUNG's Better Nether Fortresses</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/Z2mXHnxP/versions/iopJiJQp/YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>                 
+                <tr>
+                    <td>52. YUNG's Better Ocean Monuments</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/3dT9sgt4/versions/yFjEcj2g/YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr> 
+                <tr>
+                    <td>53. YUNG's Better Strongholds</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/kidLKymU/versions/8U0dIfSM/YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr> 
+                <tr>
+                    <td>54. YUNG's Better Witch Huts</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/t5FRdP87/versions/AvedwcIe/YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr>
+                <tr>
+                    <td>55. YUNG's Cave Biomes</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/cs7iGVq1/versions/HYGqXWqQ/YungsCaveBiomes-1.21.1-NeoForge-3.1.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr> 
+                <tr>
+                    <td>56. YUNG's Extras</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/ZYgyPyfq/versions/N2EpMhR7/YungsExtras-1.21.1-NeoForge-5.1.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1';">Download</button></td>
+                </tr> 
+                <tr>
+                    <td id="new1"><div><p>UPDATE!</p></div>57. Simple Voice Chat</td>
+                    <td><button type="button" onclick="window.location='https://cdn.modrinth.com/data/9eGKb6K1/versions/6rT2RWh6/voicechat-neoforge-1.21.1-2.6.17.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=neoforge';">Download</button></td>
+                </tr> 
+            </table>
+        </div>
+        <div class="tip1">
+            <p>Do you need Minecraft for free?</p>
+            <div class="wrap1">
+                <p>Download</p>
+                <img src="https://pineconemc.ru/assets/svg/logo-darkmode.svg" alt="PineconeMC logo">
+            </div>
+            <button type="button" onclick="window.open('https://pineconemc.ru/download/')">Click</button>
+        </div>
+        <div class="tips">
+            <div class="tip2">
+                <p>How to install the modpack?</p>
+            </div>
+            <div class="step s1"></div>
+            <div class="step s2"></div>
+            <div class="step s3"></div>
+            <div class="step s4"></div>
+        </div>
+        <div class="tip3">
+            <h3>Update!</h3>
+            <p><span>Version 1.1</span> of the modpack<br />adds <span>Simple Voice Chat</span>.</p>
+            <p>Please install this mod<br /><a href="#new1">(57th entry on the list)</a>.</p>
+        </div>
+    </section>
+    <script>
+        function downloadAll() {
+            const buttons = document.querySelectorAll('section#modpack > div.list1 > table td > button');
+            let delay = 0;
+
+            buttons.forEach(button => {
+                const onclickAttr = button.getAttribute('onclick');
+                
+                if (onclickAttr && onclickAttr.includes('window.location')) {
+                    const url = onclickAttr.split("'")[1];
+
+                    if (url) {
+                        setTimeout(() => {
+                            const iframe = document.createElement('iframe');
+                            iframe.style.display = 'none';
+                            iframe.src = url;
+                            document.body.appendChild(iframe);
+
+                            setTimeout(() => document.body.removeChild(iframe), 10000);
+                        }, delay);
+                        
+                        delay += 800; 
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
