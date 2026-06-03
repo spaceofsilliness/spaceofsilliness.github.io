@@ -1,0 +1,70 @@
+section#works {
+    display: grid;
+    grid-template: 2.5vh 70vh 2.5vh / 12.5% 25% 25% 25% 12.5%;
+    height: auto;
+    width: 100%;
+}
+
+section#works > div#work1 {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#works > div#work1 > div.structure {
+    text-align: left;
+    width: 100%;
+}
+
+h3, h4 {
+    margin: 0 0 0.5rem 0;
+}
+
+h3, h4, p {
+    white-space: nowrap;
+}
+
+section#works h3 {
+    font-size: 1.5rem;
+}
+
+section#works h4 {
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+
+    section#works h3 {
+        font-size: 1.3rem;
+    }
+
+    section#works h4 {
+        font-size: 0.8rem;
+    }
+
+    section#works p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section#works h3 {
+        font-size: 1.1rem;
+    }
+
+    section#works h4 {
+        font-size: 0.6rem;
+    }
+
+    section#works p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 320px) {
+    section#works > div#work1 {
+        grid-area: 2 / 2 / 3 / 5;   
+    }
+}
