@@ -1,6 +1,6 @@
 section#products {
     display: grid;
-    grid-template: repeat(5, 2.5vh calc(67.5vh / 2)) / 12.5% 75% 12.5%;
+    grid-template: repeat(70, 2.5vh calc(67.5vh / 2)) / 12.5% 75% 12.5%;
 }
 
 section#products > div.gfs {
@@ -8,7 +8,7 @@ section#products > div.gfs {
     background-color: #3F7652;
     border-radius: 0.5rem;
     display: grid;
-    grid-template: calc(67.5vh / 2) / calc(67.5vh / 2 * 3 / 4 * 5 / 7) auto;
+    grid-template: calc(67.5vh / 2 * 1 / 4 / 2) calc(67.5vh / 2 - 67.5vh / 2 * 1 / 4 / 2) / calc(67.5vh / 2 * 3 / 4 * 5 / 7) auto;
 }
 
 section#products > div#gfs1 { grid-row: 2 / 3; }
@@ -25,27 +25,124 @@ section#products > div.gfs:hover {
     box-shadow: 0 0 10px #3F7652, 0 0 10px white;
 }
 
+section#products > div.gfs > div.gfsbar {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: white;
+    display: grid;
+    grid-template: auto / calc(67.5vh / 2 * 3 / 4 * 5 / 7) auto;
+    border-radius: 0.5rem;
+}
+
+section#products > div.gfs > div.gfsbar > div.gfstext {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+}
+section#products > div.gfs > div.gfsbar > div.gfstext > p {
+    font-family:'NiseSegaSonic';
+    font-weight: normal;
+    margin: 0 0 0 0.5rem;
+}
+
 section#products > div.gfs > div.gfsinfo {
     background-color: white;
     height: calc(67.5vh / 2);
     width: 100%;
     border-radius: 0.5rem;
-    grid-column: 1 / 2;
+    grid-area: 1 / 1 / 3 / 2;
     display: grid;
-    grid-template: calc(67.5vh / 2 * 3 / 4) calc(67.5vh / 2 * 1 / 4) / calc(67.5vh / 2 * 3 / 4 * 5 / 7);
+    grid-template: calc(67.5vh / 2 * 3 / 4 + 67.5vh / 2 * 1 / 4 / 4) calc(67.5vh / 2 * 1 / 4 - 67.5vh / 2 * 1 / 4 / 4) / calc(67.5vh / 2 * 3 / 4 * 5 / 7);
 }
 
-section#products > div.gfs > div.gfsinfo > div.gfscover,section#products > div.gfs > div.gfsinfo > div.gfstitle {
+section#products > div.gfs > div.gfsinfo > div.gfstop {
+    display: grid;
+    background-color: #3F7652;
+    grid-template: calc(67.5vh / 2 * 3 / 4) calc(67.5vh / 2 * 1 / 4 / 4) / calc(67.5vh / 2 * 3 / 4 * 5 / 7);
+    height: calc(67.5vh / 2 * 3 / 4 + 67.5vh / 2 * 1 / 4 / 4);
+    width: calc(67.5vh / 2 * 3 / 4 * 5 / 7);
+    border-radius: 0.5rem;
+}
+
+section#products > div.gfs > div.gfsinfo > div.gfstop > div.gfscover {
+    grid-area: 1 / 1 / 2 / 2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0.5rem;
 }
 
-section#products > div#gfs1 > div.gfsinfo > div.gfscover {
-    background-image: url(./assets/sonic-the-hedgehog.jpg);
+section#products > div.gfs > div.gfsinfo > div.gfstop > div.gfsdate {
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+section#products > div.gfs > div.gfsinfo > div.gfstop > div.gfsdate > p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+section#products > div.gfs > div.gfsinfo > div.gfstop > div.gfsdate > p > span {
+    font-family: "Noto Color Emoji", sans-serif;
+}
+
+section#products > div.gfs > div.gfsinfo > div.gfstitle {
+    grid-area: 2 / 1 / 3 / 2;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 0 0 0.5rem 0.5rem;
+    height: calc(67.5vh / 2 * 1 / 4 - 67.5vh / 2 * 1 / 4 / 4);
+    width: calc(67.5vh / 2 * 3 / 4 * 5 / 7);
+}
+
+section#products > div#gfs1 > div.gfsinfo > div.gfstop > div.gfscover {
+    background-image: url(./assets/flicky.png);
 }
 
 section#products > div#gfs1 > div.gfsinfo > div.gfstitle {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/db/Flicky_logo_official_%28SGDB_32455%29.png);
+}
+
+section#products > div#gfs2 > div.gfsinfo > div.gfstop > div.gfscover {
+    background-image: url(./assets/sonic-the-hedgehog.jpg);
+}
+
+section#products > div#gfs2 > div.gfsinfo > div.gfstitle {
     background-image: url(https://asia.sega.com/SonicOrigins/en/images/about/about-titlelogo-sonic.png);
+}
+
+@media (max-width: 1024px) {
+
+    section#products > div.gfs > div.gfsbar > div.gfstext > p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 896px)  {
+    
+    section#products > div.gfs > div.gfsbar > div.gfstext > p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section#products > div.gfs > div.gfsbar > div.gfstext > p {
+        font-size: 0.4rem;
+    }
+}
+
+@font-face {
+    font-family: 'NiseSegaSonic';
+    src: url('./assets/NiseSegaSonic.TTF');
 }
