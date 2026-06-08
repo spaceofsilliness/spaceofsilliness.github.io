@@ -85,6 +85,7 @@ section#products > div.gfs > div.gfsinfo > div.gfstop > div.gfsdate {
 
 section#products > div.gfs > div.gfsinfo > div.gfstop > div.gfsdate > p {
     margin: 0;
+    font-size: 0.8rem;
     color: white;
     font-weight: bold;
 }
